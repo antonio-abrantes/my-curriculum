@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css" media="print" />
+    <title>Meu Curriculum</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .circulo {
+            padding: 10px;
+            width:160px;
+            height:160px;
+            border-radius:50%;
+            border:3px solid gainsboro;
+            z-index:5;
+            background:gainsboro;
+		}
+        .flex-total-centered {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        nav {
+            float: left;
+            width: 30%;
+            background: #ccc;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+        .hx-title-escuro{
+            text-align: center;
+            color: rgb(49, 46, 46);
+            background-color:rgb(150, 141, 141);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .hx-title-claro{
+            text-align: center;
+            color: rgb(49, 46, 46);
+            background-color:gainsboro;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .margem{
+            padding-left: 5px;
+            padding-right: 5px; 
+        }
+    </style>
+</head>
+<body>
+<header>
+  <!-- Implementar depois -->
+</header>
+
+<section>
+
+  <nav>
+
+    <div class="flex-total-centered">
+        <img class="circulo" src="img/manstudent2.svg" alt="">
+    </div>
+    <div class="flex-total-centered">
+        <h2>Antônio Abrantes</h2>
+    </div>
+    <div>
+        <h3 class="hx-title-claro">PESSOAL</h3>
+        <div class="margem">
+            <p>Sexo: Masculino</p>
+            <p>Nascimento: 10/07</p>
+        </div>
+    </div>
+    <div>
+        <h3 class="hx-title-claro">CONTATO</h3>
+        <div class="margem">
+            <p>Rua Tal</p>
+            <p>Centro</p>
+            <p>CEP: 58800-000</p>
+            <p>Sousa-PB</p>
+            <p>antonio.abrantes.dev@gmail.com</p>
+        </div>
+    </div>
+    <div>
+        <h3 class="hx-title-claro">IDIOMA</h3>
+        <div class="margem" >
+            <p>Inglês Básico</p>
+        </div>
+    </div>
+    <div>
+        <h3 class="hx-title-claro">LINKS</h3>
+        <div class="margem">
+            <ul>      
+                <li><a href="https://antonio-abrantes.github.io/" target="_blanck">Home Page</a></li>
+                <li><a href="https://github.com/antonio-abrantes" target="_blanck">Github</a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  
+  <article>
+
+    <h1 class="hx-title-escuro">EDUCAÇÃO</h1>
+    <div style="text-align: justify" class="margem">
+        <p><b>CST em Análise e Desenvolvimento de Sistemas</b></p>
+        <p>De 07/2015 a 06/2018</p>
+    </div>
+
+    <h1 class="hx-title-escuro">COMPETÊNCIAS TÉCNICAS</h1>
+    <div style="text-align: justify" class="margem">
+        <p>JavaScript, NodeJS, PHP, HTML, CSS, SASS, Jquery, Bootstrap, Angular</p>
+        <p>UML, Scrum, XP</p>
+    </div>
+
+  </article>
+
+</section>
+
+<footer>
+  <!-- Implementar depois -->
+</footer>
+
+</body>
+</html>
