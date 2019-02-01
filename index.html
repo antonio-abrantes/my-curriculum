@@ -26,8 +26,24 @@
             z-index:5;
             background:gainsboro;
 		}
+        .card{
+            width: 100%;
+            height: 100px;
+            background-color: #ccc;
+            border-radius: 3px;
+        }
+        .card-image{
+            width: 120px;
+            height: 100%;
+        }
         .flex-total-centered {
             display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card-flex-total-centered {
+            display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
         }
@@ -50,7 +66,7 @@
         .hx-title-escuro{
             text-align: center;
             color: rgb(49, 46, 46);
-            background-color:rgb(150, 141, 141);
+            background-color:#ccc;
             padding: 10px;
             border-radius: 5px;
         }
@@ -69,6 +85,9 @@
         .margem{
             padding-left: 5px;
             padding-right: 5px; 
+        }
+        .ident-text{
+            text-indent: 2.0em;
         }
         @media (max-width: 600px) {
         nav, article {
@@ -146,10 +165,79 @@
         <p>Git, Github, SVN, Docker</p>
     </div>
 
+    <h1 class="hx-title-escuro">OBJETIVOS</h1>
+    <div style="text-align: justify" class="margem">
+        <p class="ident-text">
+            Sou muito dedicado e focado, sempre buscando aprimorar meus conhecimentos,
+            mas igualmente disposto a aprender coisas novas. Busco uma vaga no mercado
+            onde possa colocar minhas habilidades em prática e colaborar com equipes
+            de trabalho, tendo o crescimento da organização e o desenvolvimento 
+            pessoal e profissional como focos principais</p>
+    </div>
+
     <h1 class="hx-title-escuro">ALGUNS CURSOS</h1>
     <div style="text-align: justify" class="margem">
-        <p>Java Fundamentos - Softblue</p>
-        <p>Formação Front-end - TreinaWeb</p>
+
+        <!-- Card inicio -->
+        <div class="card" style="margin: 4px; display: flex" >
+            <div class="card-image flex-total-centered">
+                <img src="img/star-quality.svg" alt="" width="90">
+            </div>
+            <div class="card-desc card-flex-total-centered">
+                <div>
+                    <p style="margin: 0">Java Fundamentos - Softblue</p>
+                    <p style="margin: 0">Data: 10/2016</p>
+                    <a style="text-decoration: none; margin-top: 3px" href="#">CERTIFICADO</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card fim -->
+
+        <!-- Card inicio -->
+        <div class="card" style="margin: 4px; display: flex" >
+            <div class="card-image flex-total-centered">
+                <img src="img/star-quality.svg" alt="" width="90">
+            </div>
+            <div class="card-desc card-flex-total-centered">
+                <div>
+                    <p style="margin: 0">Formação Front-end - TreinaWeb</p>
+                    <p style="margin: 0">Data: 09/2018</p>
+                    <a style="text-decoration: none; margin-top: 3px" href="#">CERTIFICADO</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card fim -->
+
+        <!-- Card inicio -->
+        <div class="card" style="margin: 4px; display: flex" >
+            <div class="card-image flex-total-centered">
+                <img src="img/star-quality.svg" alt="" width="90">
+            </div>
+            <div class="card-desc card-flex-total-centered">
+                <div>
+                    <p style="margin: 0">Python Fundamentos para Análise de Dados - Data Science Academy</p>
+                    <p style="margin: 0">Data: 10/2017</p>
+                    <a style="text-decoration: none; margin-top: 3px" href="#">CERTIFICADO</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card fim -->
+
+        <!-- Card inicio -->
+        <div class="card" style="margin: 4px; display: flex" >
+            <div class="card-image flex-total-centered">
+                <img src="img/star-quality.svg" alt="" width="90">
+            </div>
+            <div class="card-desc card-flex-total-centered">
+                <div>
+                    <p style="margin: 0">Introdução à Ciência da Computação com Python - Coursera</p>
+                    <p style="margin: 0">Data: 03/2017</p>
+                    <a style="text-decoration: none; margin-top: 3px" href="https://www.coursera.org/account/accomplishments/certificate/ZJWX2HEAPQD4">CERTIFICADO</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card fim -->
+
     </div>
 
   </article>
